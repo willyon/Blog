@@ -1,0 +1,134 @@
+
+/************************全局变量*****************************************/
+@dw:px;
+/************************全局变量*****************************************/
+
+/**********************************常规样式**********************************/
+.h(@argu:0){
+  height: unit(@argu,@dw);
+}
+.lh(@argu){
+  line-height: unit(@argu,@dw);
+}
+.hlh(@argu){
+  height: unit(@argu,@dw);
+  line-height: unit(@argu,@dw);
+}
+.w(@argu:0){
+  width: unit(@argu,@dw);
+}
+.wh(@width, @height){
+  width: @width;
+  height: @height;
+}
+.fsz(@argu){
+  font-size: unit(@argu,@dw);
+}
+.radius(@argu){
+  border-radius: unit(@argu,@dw);
+}
+.color(@argu){
+  color: @argu;
+}
+.ml(@argu){
+  margin-left: unit(@argu,@dw);
+}
+.mlr(@argu){
+  margin-left: unit(@argu,@dw);
+  margin-right: unit(@argu,@dw);
+}
+.mr(@argu){
+  margin-right: unit(@argu,@dw);
+}
+.mt(@argu){
+  margin-top: unit(@argu,@dw);
+}
+.mb(@argu){
+  margin-bottom:unit(@argu,@dw);
+}
+.mtb(@argu){
+  margin-top: unit(@argu,@dw);
+  margin-bottom: unit(@argu,@dw);
+}
+.pl(@argu){
+padding-left:unit(@argu,@dw);
+}
+.pr(@argu){
+padding-right:unit(@argu,@dw);
+}
+.plr(@argu){
+  padding-left: unit(@argu,@dw);
+  padding-right: unit(@argu,@dw);
+}
+.pt(@argu){
+  padding-top:unit(@argu,@dw);
+}
+.pb(@argu){
+  padding-bottom:unit(@argu,@dw);
+}
+.ptb(@argu){
+  padding-top: unit(@argu,@dw);
+  padding-bottom: unit(@argu,@dw);
+}
+.pd(@pt:0,@pr:0,@pb:0,@pl:0){
+  padding:unit(@pt,@dw) unit(@pr,@dw) unit(@pb,@dw) unit(@pl,@dw);
+}
+.position(@argu){
+  position:@argu;
+}
+.top(@argu){
+top:unit(@argu,@dw);
+}
+.bottom(@argu){
+  bottom: unit(@argu,@dw);
+}
+.left(@argu){
+  left:unit(@argu,@dw);
+}
+.right(@argu){
+  right: unit(@argu,@dw);
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.inline{
+  display: inline;
+}
+.inblock{
+  display:inline-block;
+}
+.block{
+  display: block;
+}
+.flex{
+  display: flex;
+}
+.none{
+  display: none;
+}
+.pointer{
+  cursor: pointer;
+}
+/**********************************常规样式**********************************/
+
+
+/************************定制样式*****************************************/
+//遮罩层
+.fixedModal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.text_dot{//文字过长，改为点点点显示
+  white-space: nowrap;//规定段落中的文本不进行换行
+  overflow:hidden;//超出部分自动隐藏
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+}
