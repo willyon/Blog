@@ -1,0 +1,55 @@
+<style>
+    .gg{
+        width:100px;
+        height:100px;
+        background:yellowgreen;
+        clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%)
+    }
+</style>
+<div>
+子元素居中一 absolute margin:auto
+</div>
+
+<div style="width:200px;height:200px;
+            border:solid blue;
+            position:relative;
+            ">
+
+    <div style="width:100px;height:100px;
+                 background:red;
+                 position:absolute;
+                 top:0;bottom:0;left:0;right:0;
+                 margin:auto;
+                 ">
+    </div>
+</div>
+<br>
+子元素居中二 absolute transform
+<div style="width:200px;height:200px; 
+              border:2px solid #000;
+              position:relative;">
+
+    <div style="width:100px;height:100px;
+                  background-color: red;
+                  margin:auto;
+                  position:absolute;left:50%;top:50%;
+                  transform: translate(-50%,-50%);">
+    </div>
+</div>
+<br>
+子元素居中三 flex
+<div style="width:200px;height:200px; 
+              border:2px solid #000;
+              display:flex;
+              justify-content:center;
+              align-items:center;">
+
+    <div style="width:100px;height:100px;
+                  background-color: red;">
+    </div>
+</div>
+<br>
+传统方法三角形
+<div style='width:0;height:0;border-left:50px solid red;border-right:50px solid blue;border-bottom:50px solid yellow;border-top:50px solid purple;'></div>
+clip-path多边形
+<div class="gg"></div>
